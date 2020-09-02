@@ -1,1 +1,1 @@
-# Pinterest-Clone
+# Pinterest-Clone using HTML and CSS
