@@ -1,0 +1,439 @@
+html{box-sizing: border-box;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;}
+
+header{ 
+    margin-left: 0px;
+    padding: 10px 10px 10px 16px;
+    height: 60px;
+    width: 98%;
+    position: fixed;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px #efefef;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;}
+
+    #nav-logo{
+        margin: 0px;
+        width: 22px;
+        height: 22px;
+        padding: 13px;
+        border-radius: 50px;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+
+    /* PAGE SELECTED */        
+    /* #inicio{    color:white;
+        background-color:black;} */
+
+    .nav-but{
+        color: black;
+        font-weight: bolder;
+        text-decoration: none;
+        height: 48px;
+        padding: 0px 16px 0px 16px;
+        border-radius: 50px;
+        outline: none;
+        display: flex;
+        align-items: center;}
+
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        border-radius: 50px;}
+
+        .dropbtn{
+            background-color: #000000;
+            color: white;
+            padding: 16px;
+            height: 48px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            outline: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        #drop-arrow{
+            margin-top: 2px;
+            text-indent: 10px;
+            font-size: 20px;
+        }    
+
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                margin: 0px 0px 0px 20px;
+                padding:10px 0px 10px 0px;
+                background-color: rgb(241, 241, 241,1) ;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                border-radius: 10px;}
+            
+                .dropdown-content a{
+                    color: black;
+                    text-indent: 5px;
+                    font-weight: bold;
+                    margin: 0px 10px 0px 10px; 
+                    border-radius: 5px;
+                    padding: 5px 0px 5px 0px;
+                    text-decoration: none;
+                    display: block;}
+
+
+    #search-input{  border: none;
+                    margin: 0px 8px 0px 8px;
+                    height:48px;
+                    width: 80%;
+                    text-decoration: none;
+                    color: gray;
+                    font-size: 14.5px;
+                    text-indent: 35px;
+                    background-color: #efefef;
+                    border-radius: 50px;
+                    outline: none;
+                    background-image: url(Assets/buscar-gr.svg);
+                    background-size: 15px;
+                    background-repeat: no-repeat;
+                    background-position-x: 15px;
+                    background-position-y: center;}
+
+    .nav-menu {
+        width: 54px;
+        height: 48px;
+        font-weight: bolder;
+        text-decoration: none;
+        border-radius: 50px;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+
+        #alert, #inbox{color:gray; font-size:25px;}
+
+        #profile{width:25px; border-radius:25px;}
+
+    #nav-arrow{
+        width: 30px;
+        height: 30px;
+        font-weight: bolder;
+        text-decoration: none;
+        border-radius: 50px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+
+        #arrow-down{
+            color: gray;
+            font-size: 20px;}
+
+main{
+    padding-top: 20px;
+    background-color: white;}
+    
+    #principal{
+        padding-left: 7px;
+        padding-right: 25px;
+      }
+      
+      .rows{
+          padding-top: 80px;
+          column-count: 7;
+          column-gap: 1.5em;
+          margin-right: 5px;
+        }
+        
+        .card{
+          position: relative;
+          margin: 0 0 1em;
+          width: 100%;
+        }
+        
+        .card img{
+            width: -webkit-fill-available;
+            border-radius: 28px;
+        }
+      
+        .button-guardar,
+        .button-compartir,
+        .button-mas,
+        .button-website{
+          display: none;
+          position: absolute;
+          /* margin-left: -17px; */
+          /* margin-right: 30px; */
+        }
+        
+        
+        .button-guardar{
+          top: 3%;
+          right: 8%;
+          background-color: #e40028;
+          height: 36px;
+          width: 70px;
+          border-radius: 28px;
+          border: none;
+          text-decoration: none;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+      
+        }
+        
+        .button-mas {
+          bottom: 3%;
+          right: 8%;
+          border-radius: 28px;
+          border: none;
+          font-weight: bold;
+          text-decoration: none;
+          opacity: 0.7;
+          height: 34px;
+          width: 34px;
+        }
+        
+        .button-compartir {
+          bottom: 3%;
+          right: 24%;
+          background-image: url(./Assets/upload-solid.svg);
+          background-repeat: no-repeat;
+          background-size: 20px;
+          background-position: center;
+          height: 34px;
+          width: 34px;
+          border-radius: 28px;
+          border: none;
+          font-weight: bold;
+          text-decoration: none;
+          opacity: 0.7;
+        }
+        
+        .button-website {
+          bottom: 3%;
+          left: 7%;
+          border-radius: 28px;
+          border: none;
+          text-decoration: none;
+          opacity: 0.7;
+          height: 34px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+        }
+        
+        a div{
+          margin: 0px;
+          padding: 0px;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 28px;
+          text-decoration: none;
+          color: white;
+          border: none;
+        }
+
+    #flotante{
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .btn-flt{
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            border:none;
+            outline: none;
+            margin-top:10px;
+            font-size: 30px;
+            font-weight: medium;
+            text-shadow: 0px 1px 1px grey;
+            box-shadow: 0px 1px 1px grey;
+            
+        }
+
+/* HOVER pointer*/
+
+#nav-logo:hover                     {background-color: #efefef;}
+.nav-but:hover                      {background-color: #efefef;}
+.dropdown-content a:hover           {background-color: #ddd;}
+.dropdown:hover .dropdown-content   {display: block;}
+.dropdown:hover .dropbtn            {background-color: #000000;}
+#search-input:hover                 {background-color: rgb(225,225,225);}
+.nav-menu:hover                     {background-color: #efefef;}
+#nav-arrow:hover                    {background-color: #efefef;}
+.btn-flt:hover                     {background-color: #efefef;}
+
+.card:hover .card-img{opacity: 0.8;}
+.card:hover .button-guardar,
+.card:hover .button-compartir,
+.card:hover .button-mas,
+.card:hover .button-website {display: block}
+  
+.button-guardar:hover > div {background-color:rgba(0, 0, 0, 0.1);}
+  
+.button-website:hover,
+.button-compartir:hover,
+.button-mas:hover{opacity: 1;}
+
+/* FOCUS tab*/
+
+#nav-logo:focus     {box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);}
+.nav-but:focus      {box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);}
+.dropbtn:focus      {box-shadow: 0 0 0 4px rgb(0, 162, 255,.5)} 
+#search-input:focus {background-image: none;
+                     box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+                     text-indent: 10px;}
+.nav-menu:focus     {box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);}
+#nav-arrow:focus    {box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);}
+.btn-flt:focus      {box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);}
+                     
+
+/* ACTIVE click*/
+
+.nav-but:active                 {background-color: black;color: white;}
+
+.nav-menu:active                {box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+                                 background-color: #efefef;}
+.nav-menu:active > #alert       {color: black;}
+.nav-menu:active > #inbox       {color: black;}
+.nav-menu:active > #profile     {border: 2px solid black;}
+
+#nav-arrow:active               {box-shadow: 0 0 0 4px rgb(0, 162, 255,.5);
+                                 background-color: #efefef;}
+#nav-arrow:active > #arrow-down {color: black;}
+
+/*Media Query*/
+
+@media (min-width:1680px){
+    .card img{width: 243px;}
+    .rows{column-count: 7;}
+    .dropdown{display: none;}
+}
+
+@media (min-width:1440px) and (max-width:1680px){
+    .card img{width: 243px;}
+    .rows{column-count: 6;}
+    .dropdown{display: none;}
+}
+
+@media (min-width:1280px) and (max-width:1440px){
+    .card img{width: 243px;}
+    .rows{column-count: 5;}
+    .dropdown{display: none;}
+}
+  
+@media (min-width:1040px) and (max-width:1280px){
+    #principal{ padding-left: 10px; padding-right: 10px;}
+    .card img{width: 243px;}
+    .rows{column-count: 4;}
+    .dropdown{display: none;}
+}
+  
+@media (min-width:850px) and (max-width:1040px){
+    #principal{padding-left: 50px; padding-right: 50px;}
+    .card img{width: 243px;}
+    .rows{column-count: 3;}
+    .dropdown{display: none;}
+}
+
+/* @media (min-width:850px) and (max-width:890px){
+    #principal{padding-left: 150px; padding-right: 150px;}
+    .card img{width: 243px;}
+    .rows{column-count: 2;}
+    .dropdown{display: none;}
+} */
+  
+@media screen and (max-width:850px){
+    .nav-but{display: none;}
+    #principal{padding-left: 150px; padding-right: 150px;}
+    .card img{width: 243px;}
+    .rows{column-count: 2;}
+    .dropdown{display: none;}
+}
+
+@media screen and (max-width:830px){
+    .nav-but{display: none;}
+    .dropdown{display: block;}
+    #principal{padding-left: 130px; padding-right: 130px;}
+}
+
+@media screen and (max-width:815px){
+    .nav-but{display: none;}
+    .dropdown{display: block;}
+    #principal{padding-left: 110px;padding-right: 110px;}
+}
+
+@media screen and (max-width:800px){
+    .nav-but{display: none;}
+    .dropdown{display: block;}
+    #principal{padding-left: 100px; padding-right: 100px;}
+}
+
+@media screen and (max-width:760px){
+    .nav-but{display: none;}
+    .dropdown{display: block;}
+    #principal{padding-left: 90px; padding-right: 90px;}
+}
+
+@media screen and (max-width:720px){
+    .nav-but{display: none;}
+    .dropdown{display: block;}
+    #principal{padding-left: 70px;padding-right: 70px;}
+}
+
+@media screen and (max-width:680px){
+    .nav-but{display: none;}
+    .dropdown{display: block;}
+    #principal{padding-left: 50px;padding-right: 50px;}
+}
+
+@media screen and (max-width:650px){
+    .nav-but{display: none;}
+    .dropdown{display: block;}
+    #principal{padding-left: 30px;padding-right: 30px;}
+}
+
+@media screen and (max-width:600px){
+    .nav-but{display: none;}
+    .dropdown{display: block;}
+    #principal{padding-left: 10px;padding-right: 00px;}
+    .card{display: flex;justify-content: center;}
+}
+
+@media screen and (max-width:560px){
+    .nav-but{display: none;}
+    .dropdown{display: block;}
+    .card img{width: 243px;}
+    .rows{column-count: 1;}
+}
+  
+
+
+
+
+
